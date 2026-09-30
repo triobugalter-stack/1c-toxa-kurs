@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UZ PRO ACADEMY — 1C Pro Lab</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar">
+  <button class="hamb" id="hamb">☰</button><div class="onec-logo">1C</div>
+  <div class="product"><b>Бухгалтерия для Узбекистана</b><span>Редакция 3.0 • O'quv simulyatori</span></div>
+  <div class="top-search"><span>⌕</span><input id="globalSearch" placeholder="Поиск Ctrl+F"></div>
+  <div class="top-actions"><button id="notifications">♧</button><button id="theme">◐</button><span class="demo-badge">DEMO</span><span class="user">Buxgalter ▾</span></div>
+</header>
+<div class="workarea">
+<aside class="navrail" id="navrail">
+  <div class="home-link" data-screen="home">⌂ <span>Начальная страница</span></div>
+  <div class="nav-title">РАЗДЕЛЫ</div>
+  <button class="nav-item active" data-screen="manager">⌁ <span>Руководителю</span></button>
+  <button class="nav-item" data-screen="bank">▣ <span>Банк и касса</span></button>
+  <button class="nav-item" data-screen="sales">⇧ <span>Продажи</span></button>
+  <button class="nav-item" data-screen="purchases">⇩ <span>Покупки</span></button>
+  <button class="nav-item" data-screen="warehouse">▦ <span>Склад</span></button>
+  <button class="nav-item" data-screen="production">⚙ <span>Производство</span></button>
+  <button class="nav-item" data-screen="fixed">◫ <span>ОС и НМА</span></button>
+  <button class="nav-item" data-screen="salary">♙ <span>Зарплата и кадры</span></button>
+  <button class="nav-item" data-screen="operations">Дт <span>Операции</span></button>
+  <button class="nav-item" data-screen="edo">▤ <span>ЭДО</span></button>
+  <button class="nav-item" data-screen="reports">▥ <span>Отчеты</span></button>
+  <button class="nav-item" data-screen="catalogs">▤ <span>Справочники</span></button>
+  <button class="nav-item" data-screen="admin">⚙ <span>Администрирование</span></button>
+</aside>
+<main class="main" id="main">
+  <div class="crumb"><span>Главное</span><b>›</b><span id="crumbCurrent">Руководителю</span><span class="save-dot" id="saveDot">● сохранено</span></div>
+  <section id="screen"></section>
+</main>
+<aside class="inspector" id="inspector">
+  <div class="inspect-head"><b>УЧЕБНЫЙ ИНСПЕКТОР</b><button id="closeInspector">×</button></div>
+  <div id="inspectBody"><div class="empty-inspect">Hujjat, tugma yoki jadval qatorini bosing.<br><br>Bu panel sizga <b>1C ichida nima sodir bo'layotganini</b> tushuntiradi.</div></div>
+</aside>
+</div>
+<div class="bottom-status"><span>● Demo baza: <b>ABC MCHJ</b></span><span id="statusMsg">Готово</span><span>Документы: <b id="docCount">0</b></span><span>Проводки: <b id="postingCount">0</b></span></div>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal" id="modal"><div class="modal-box"><button class="modal-x" id="modalX">×</button><div id="modalBody"></div></div></div>
+<script src="app.js"></script>
+</body></html>
